@@ -11,11 +11,14 @@
     <title>Spotify</title>
 </head>
 <body>
-    <div class="wrapper">
-        <header>
+    <header>
+        <!-- parte superiore header -->
+        <div class="navigator">
+            <!-- logo e menu -->
+            <img id="pittogramma" src="./spotify/img/logo-small.svg" alt="pittogramma">
             <img class="logo" src="./spotify/img/logo.svg" alt="logo">
             <nav class="principale">
-                <ul>
+                <ul class="menu">
                     <li class="flex">
                         <img src="./spotify/img/home.svg" alt="home">
                         <a href="#">Home</a>
@@ -30,25 +33,77 @@
                     </li>
                 </ul>
             </nav>
-        </header>
-        <main class="debug">
-            <div class="upgrade">
-                <button>EFFETTUA L'UPGRADE</button>
-                <section>
-                    <nav>link link link link link link</nav>
-                    <h1>Recently played</h1>
-                    <div class="row flex">
-                        <div class="card"> <img src="./spotify/img/cure.jpeg" alt=""></div>
-                        <div class="card"> <img src="./spotify/img/cure.jpeg" alt=""></div>
-                        <div class="card"> <img src="./spotify/img/cure.jpeg" alt=""></div>
-                        <div class="card"> <img src="./spotify/img/cure.jpeg" alt=""></div>
-                        <div class="card"> <img src="./spotify/img/cure.jpeg" alt=""></div>
-                        <div class="card"> <img src="./spotify/img/cure.jpeg" alt=""></div>
-                    </div>
-                </section>
+            <!-- /logo e menu -->
+            <!-- aggiunta playlist -->
+            <div class="crea-playlist">
+                <h4>PLAYLIST</h4>
+                <i class="fa-solid fa-plus"></i>
+                <span>Crea Playlist</span>
+                <ul class="playlist">
+                    <li>
+                        <a href="#">Nome Playlist</a>
+                    </li>
+                    <li>
+                        <a href="#">Nome Playlist</a>
+                    </li>
+                    <li>
+                        <a href="#">Nome Playlist</a>
+                    </li>
+                    <li>
+                        <a href="#">Nome Playlist</a>
+                    </li>
+                    <li>
+                        <a href="#">Nome Playlist</a>
+                    </li>
+                    <li>
+                        <a href="#">Nome Playlist</a>
+                    </li>
+                    <li>
+                        <a href="#">Nome Playlist</a>
+                    </li>
+                </ul>
             </div>
-        </main>
-    </div>
+            <!-- /aggiunta playlist -->
+        </div>
+        <!-- /parte superiore header -->
+        <!-- parte inferiore header -->
+        <div class="admin">
+            <!-- download app -->
+            <div class="download flex">
+                <img src="./spotify/img/download.svg" alt="download">
+                <span>Installa app</span>
+            </div>
+            <!-- /download app -->
+            <!-- nome e cognome -->
+            <div class="user flex">
+                <img src="./spotify/img/profile.svg" alt="profile">
+                <span>John Doe</span>
+            </div>
+            <!-- /nome e cognome -->
+        </div>
+        <!-- /parte inferiore header -->
+    </header>
+    <main class="debug">
+        <div class="upgrade">
+            <button>EFFETTUA L'UPGRADE</button>
+            <section>
+                <!-- secondo menu -->
+                <nav>link link link link link link</nav>
+                <!-- /secondo menu -->
+                <h1>Recently played</h1>
+                <!-- card musica -->
+                <div class="cd row flex">
+                    <div class="card"> <img src="./spotify/img/cure.jpeg" alt=""></div>
+                    <div class="card"> <img src="./spotify/img/cure.jpeg" alt=""></div>
+                    <div class="card"> <img src="./spotify/img/cure.jpeg" alt=""></div>
+                    <div class="card"> <img src="./spotify/img/cure.jpeg" alt=""></div>
+                    <div class="card"> <img src="./spotify/img/cure.jpeg" alt=""></div>
+                    <div class="card"> <img src="./spotify/img/cure.jpeg" alt=""></div>
+                </div>
+                <!-- /card musica -->
+            </section>
+        </div>
+    </main>
     <footer></footer>
 </body>
 </html>
