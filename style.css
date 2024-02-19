@@ -9,3 +9,43 @@
 body{
     font-family: "Montserrat", sans-serif;
 }
+
+/*------------
+    DEBUG
+-------------*/
+.debug{
+    border: 2px dashed coral;
+}
+
+/*------------
+    GENERAL
+-------------*/
+.wrapper{
+    display: flex;
+}
+header{
+    display: flex;
+    flex-direction: column;
+    background-color: bisque;
+    width: 200px;
+    height: calc(100vh - 90px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 10px;
+}
+main{
+    background-color: blue;
+    flex-grow: 1;
+    padding: 30px;
+    height: calc(100vh - 90px);
+    margin-left: 200px;
+    overflow-y: auto;
+}
+footer{
+    width: 100%;
+    height: 90px;
+    background-color: aquamarine;
+    position: fixed;
+    bottom: 0;
+}
