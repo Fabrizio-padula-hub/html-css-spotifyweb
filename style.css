@@ -19,12 +19,6 @@ li{
     font-weight: 500;
     color: #717171;
 }
-.btn{
-    background: none;
-    border: none;
-    margin: 5px 0;
-    color: #717171;
-}
 
 /*------------
     DEBUG
@@ -37,7 +31,7 @@ li{
     GENERAL
 -------------*/
 .wrapper-app{
-    height: calc(100vh - 90px);
+    height: calc(100vh - 70px);
 }
 .flex{
     display: flex;
@@ -57,7 +51,13 @@ li{
 /*------------
     UTILITY
 -------------*/
-
+.btn{
+    background: none;
+    border: none;
+    margin: 5px 0;
+    color: #717171;
+    cursor: pointer;
+}
 
 /*------------
     HEADER
@@ -137,8 +137,8 @@ main{
     FOOTER
 -------------*/
 footer{
-    height: 90px;
-    background-color: blue;
+    height: 70px;
+    background-color: #282828;
     padding: 10px 6px;
 }
 .box{
@@ -146,6 +146,7 @@ footer{
 }
 .box .col{
     width: 20%;
+    align-items: center;
 }
 .box .center{
     width: 60%;
@@ -154,10 +155,27 @@ footer{
     max-width: 45px;
 }
 .box .name-album span{
+    font-size: 0.7rem;
     color: #717171;
+}
+.box .name-album h5{
+    font-size: 0.7rem;
+}
+.box .name-album{
+    margin-right: 30px;
+}
+.box .btn{
+    margin: 0 6px;
 }
 .box .center{
     text-align: center;
+}
+.center .icons i{
+    margin: 0 6px;
+    font-size: 22px;
+}
+.center .progress-bar{
+    margin: 0 30px;
 }
 .box .controls{
     align-items: center;
@@ -173,8 +191,9 @@ footer{
     width: 30%;
     background-color: #fff;
 }
-.box .dx{
-    align-items: center;
+.dx .icons i{
+    margin: 0 6px;
+    font-size: 12px;
 }
 
 
@@ -186,7 +205,9 @@ footer{
 }
 
 @media screen and (max-width: 700px) {
-    
+    .box .sx .buttons{
+        flex-direction: column;
+    }
 }
 
 @media screen and (max-width: 600px) {
