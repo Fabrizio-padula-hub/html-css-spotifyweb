@@ -244,7 +244,7 @@ footer{
         flex-wrap: wrap;
     }
     .row .col{
-        width: calc(100% / 4);
+        width: calc(100% / 4 - 5px);
     }
 }
 
@@ -253,7 +253,7 @@ footer{
         flex-direction: column;
     }
     .row .col{
-        width: calc(100% / 2);
+        width: calc(100% / 2 - 5px);
     }
 }
 
