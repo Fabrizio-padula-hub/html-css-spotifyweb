@@ -32,19 +32,8 @@ li{
     display: flex;
     height: calc(100vh - 90px);
 }
-header{
-    background-color: aqua;
-    width: 250px;
-}
-main{
-    background-color: bisque;
-    width: calc(100% - 250px);
-    overflow-y: auto;
-}
-footer{
-    height: 90px;
-    background-color: blue;
-}
+
+
 
 /*------------
     UTILITY
@@ -54,14 +43,15 @@ footer{
 /*------------
     HEADER
 -------------*/
-
-
-
-
-
-
-
-
+header{
+    width: 250px;
+    background-color: aqua;
+    flex-shrink: 0;
+    padding: 10px;
+}
+.logo img{
+    max-width: 70%;
+}
 
 
 
@@ -70,7 +60,23 @@ footer{
 /*------------
     MAIN
 -------------*/
+main{
+    background-color: bisque;
+    overflow-y: auto;
+    flex-grow: 1;
+}
 
+
+
+
+
+/*------------
+    FOOTER
+-------------*/
+footer{
+    height: 90px;
+    background-color: blue;
+}
 
 
 /****************
@@ -85,6 +91,8 @@ footer{
 }
 
 @media screen and (max-width: 600px) {
-    
+    header{
+        width: 80px;
+    }
 
 }
