@@ -33,20 +33,6 @@ li{
 .wrapper-app{
     height: calc(100vh - 70px);
 }
-.flex{
-    display: flex;
-}
-.between{
-    justify-content: space-between;
-}
-.margin-top{
-    margin: 12px 0;
-}
-.margin-right{
-    margin-right: 6px;
-}
-
-
 
 /*------------
     UTILITY
@@ -66,6 +52,18 @@ li{
     color: inherit;
     cursor: pointer;
     padding: 6px 30px;
+}
+.flex{
+    display: flex;
+}
+.between{
+    justify-content: space-between;
+}
+.margin-top{
+    margin: 12px 0;
+}
+.margin-right{
+    margin-right: 6px;
 }
 
 /*------------
@@ -138,6 +136,7 @@ main{
     padding: 0 10px;
 }
 .secondary-menu{
+    flex-wrap: wrap;
     justify-content: center;
     background-color: #fff;
     padding: 10px 0;
@@ -148,9 +147,24 @@ main{
 .secondary-menu li{
     margin: 0 20px;
 }
+/*--- main-card --- */
 .container{
     padding: 0 15px;
 }
+.row{
+    gap: 6px;
+}
+.container .col{
+    width: calc(100% / 6);
+    text-align: center;
+}
+.row .col span{
+    font-size: 0.6rem;
+    color: #7c7e83;
+}
+
+
+/*--- fine main-card --- */
 
 
 
