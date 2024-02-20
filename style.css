@@ -277,5 +277,23 @@ footer{
     .user .btn, h5{
         display: none;
     }
+}
 
+/*------------
+    HOVER
+-------------*/
+.menu-principal li:hover{
+    color: #fff;
+    border-left: 1px solid #adff2f;
+}
+.secondary-menu li:hover{
+    color: #fff;
+    border-bottom: 1px solid #adff2f;
+}
+.playlist li:hover{
+    color: #fff;
+}
+.top-main .btn-big:hover{
+    transform: scale(1.05);
+    border: 1px solid #adff2f;
 }
