@@ -11,12 +11,48 @@
     <title>Spotify</title>
 </head>
 <body>
-    <div class="wrapper-app">
-        <header>
+    <div class="wrapper-app flex">
+        <header class="flex">
+            <!-- logo -->
             <div class="logo">
-                <img src="./spotify/img/logo.svg" alt="">
+                <img class="pictogram" src="./spotify/img/logo-small.svg" alt="">
+                <img class="logo-1000" src="./spotify/img/logo.svg" alt="logo">
             </div>
-            
+            <!-- /logo -->
+            <!-- menu-principal -->
+            <nav>
+                <ul class="menu-principal margin-top">
+                    <li><img src="./spotify/img/home.svg" alt=""><span>Home</span></li>
+                    <li><img src="./spotify/img/search.svg" alt=""><span>Cerca</span></li>
+                    <li><img src="./spotify/img/libreria.svg" alt=""><span>La tua libreria</span></li>
+                </ul>
+            </nav>
+            <!-- /menu-principal -->
+            <!-- create playlist -->
+            <div class="create-playlist margin-top">
+                <h4>PLAYLIST</h4>
+                <button class="btn"><i class="margin-right fa-solid fa-plus"></i>Crea Playlist</button>
+            </div>
+            <ul class="playlist">
+                <li>Nome Playlist</li>
+                <li>Nome Playlist</li>
+                <li>Nome Playlist</li>
+                <li>Nome Playlist</li>
+                <li>Nome Playlist</li>
+                <li>Nome Playlist</li>
+                <li>Nome Playlist</li>
+            </ul>
+            <div class="user">
+               <div class="download flex">
+                <img class="margin-right" src="./spotify/img/download.svg" alt="">
+                <button class="btn">Installa app</button>
+               </div>
+                <div class="admin flex">
+                    <img class="margin-right" src="./spotify/img/profile.svg" alt="">
+                    <h5>John Doe</h5>
+                </div>
+            </div>
+            <!-- /create playlist -->  
         </header>
         <main></main>
     </div>

@@ -16,6 +16,14 @@ img{
 li{
     list-style: none;
     cursor: pointer;
+    font-weight: 500;
+    color: #717171;
+}
+.btn{
+    background: none;
+    border: none;
+    margin: 5px 0;
+    color: #717171;
 }
 
 /*------------
@@ -29,8 +37,16 @@ li{
     GENERAL
 -------------*/
 .wrapper-app{
-    display: flex;
     height: calc(100vh - 90px);
+}
+.flex{
+    display: flex;
+}
+.margin-top{
+    margin: 12px 0;
+}
+.margin-right{
+    margin-right: 6px;
 }
 
 
@@ -45,13 +61,57 @@ li{
 -------------*/
 header{
     width: 250px;
-    background-color: aqua;
+    background-color: #000;
     flex-shrink: 0;
     padding: 10px;
+    flex-direction: column;
+}
+.logo .pictogram{
+    display: none;
 }
 .logo img{
     max-width: 70%;
 }
+.menu-principal li{
+    display: flex;
+    align-items: center;
+}
+.menu-principal li img{
+    max-height: 28px;
+    margin-right: 6px;
+}
+.create-playlist .btn i{
+    background-color: #a3a3a3;
+    padding: 10px;
+    color: #000;
+}
+.playlist{
+    flex-grow: 1;
+    overflow-y: auto;
+}
+.playlist li{
+    margin: 10px 0;
+}
+.user{
+    margin-top: auto;
+}
+.user .download img{
+    max-height: 15px;
+}
+.admin{
+    border-top: 1px solid #fff;
+}
+.user .admin img{
+    max-height: 24px;
+    background-color: #808080;
+    border-radius: 50%;
+}
+.download, .admin{
+    align-items: center;
+}
+
+
+
 
 
 
@@ -92,7 +152,26 @@ footer{
 
 @media screen and (max-width: 600px) {
     header{
-        width: 80px;
+        width: 55px;
+    }
+    .create-playlist, .playlist{
+        display: none;
+    }
+    .logo-1000{
+        display: none;
+    }
+    .logo .pictogram{
+        display: block;
+        max-height: 30px;
+    }
+    .menu-principal span{
+        display: none;
+    }
+    .menu-principal img{
+        margin: 3px 0;
+    }
+    .user .btn, h5{
+        display: none;
     }
 
 }
