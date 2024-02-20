@@ -12,18 +12,10 @@ body{
 }
 img{
     max-width: 100%;
-    display: block;
 }
 li{
     list-style: none;
     cursor: pointer;
-}
-.download span,
-li a{
-    text-decoration: none;
-    font-weight: 800;
-    font-size: 12px;
-    color: #4d4d4d;
 }
 
 /*------------
@@ -36,97 +28,18 @@ li a{
 /*------------
     GENERAL
 -------------*/
-header{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    background-color: #000;
-    width: 200px;
-    height: calc(100vh - 90px);
-    position: fixed;
-    top: 0;
-    left: 0;
-    padding: 0 18px;
-}
-main{
-    background-color: blue;
-    flex-grow: 1;
-    padding: 20px;
-    height: calc(100vh - 90px);
-    margin-left: 200px;
-    overflow-y: auto;
-}
-footer{
-    width: 100%;
-    height: 90px;
-    background-color: aquamarine;
-    position: fixed;
-    bottom: 0;
-    z-index: 10;
-}
+
 
 /*------------
     UTILITY
 -------------*/
-.flex{
-    display: flex;
-    flex-wrap: nowrap;
-}
-.card{
-    margin: 10px;
-}
-.row img{
-    width: 140px;
-    height: 140px;
-}
+
 
 /*------------
     HEADER
 -------------*/
-#pittogramma{
-    display: none;
-}
-header nav img{
-    max-width: 25px;
-}
-.logo{
-    margin-top: 16px;
-    max-width: 70%;
-}
-.principale{
-    margin: 30px 0;
-}
-.menu li,
-.playlist li{
-    margin: 8px 0;
-    align-items: center;
-} 
-.menu li a{
-    margin-left: 6px;
-} 
-.crea-playlist i{
-    margin: 10px 0;
-    padding: 10px;
-    color: #000;
-    font-weight: 900;
-    background-color: #a3a3a3;
-}
-.download img{
-    max-width: 10%;
-    margin-right: 10px;
-}
-.user img{
-    max-width: 14%;
-    margin-right: 16px;
-    background-color: #a3a3a3;
-    border-radius: 100%;
-}
-.user{
-    align-items: center;
-    border-top: 2px solid #fff;
-    margin-top: 6px;
-    padding: 6px 0;
-}
+
+
 
 
 
@@ -141,47 +54,21 @@ header nav img{
 /*------------
     MAIN
 -------------*/
-.row{
-    margin-left: -10px;
-    margin-right: -10px;
-}
-.cd .card{
-    width: calc(100% / 6);
-}
+
 
 
 /****************
     RESPONSIVE
 *****************/
 @media screen and (max-width: 1100px) {
-    .flex{
-        flex-wrap: wrap;
-    }
-    .card{
-        width: calc(100% / 4);
-    }
+    
 }
 
 @media screen and (max-width: 700px) {
-    .card{
-        width: calc(100% / 3);
-    }
+    
 }
 
 @media screen and (max-width: 600px) {
-    #pittogramma{
-        max-width: 15%;
-        display: block;
-        margin-top: 16px;
-    }
-    .logo{
-        display: none;
-    }
-    .menu li a{
-        display: none;
-    }
-    .crea-playlist{
-        display: none;
-    }
+    
 
 }
