@@ -124,7 +124,7 @@ header{
     MAIN
 -------------*/
 main{
-    background-color: bisque;
+    background-color: #141922;
     overflow-y: auto;
     flex-grow: 1;
 }
@@ -138,7 +138,6 @@ main{
 .secondary-menu{
     flex-wrap: wrap;
     justify-content: center;
-    background-color: #fff;
     padding: 10px 0;
     font-size: 0.6rem;
     margin-bottom: 20px;
@@ -158,19 +157,14 @@ main{
     width: calc(100% / 6);
     text-align: center;
 }
-.row .col span{
+.container span{
     font-size: 0.6rem;
     color: #7c7e83;
 }
-
-
-
+.container .radio{
+    border-radius: 50%;
+}
 /*--- fine main-card --- */
-
-
-
-
-
 
 /*------------
     FOOTER
@@ -254,6 +248,9 @@ footer{
     }
     .row .col{
         width: calc(100% / 2 - 5px);
+    }
+    .secondary-menu li{
+        margin-top: 10px;
     }
 }
 
