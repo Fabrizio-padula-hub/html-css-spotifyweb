@@ -49,7 +49,7 @@
                </div>
                 <div class="admin flex">
                     <img class="margin-right" src="./spotify/img/profile.svg" alt="">
-                    <h5>John Doe</h5>
+                    <h4>John Doe</h4>
                 </div>
             </div>
             <!-- /create playlist -->  
@@ -73,32 +73,74 @@
                 <h3>Recently played</h3>
                 <div class="row flex margin-top">
                     <div class="col">
-                        <img src="./spotify/img/metal_lifting.jpg" alt="">
+                        <div class="album-hover">
+                            <div class="img-hover">
+                                <img src="./spotify/img/metal_lifting.jpg" alt="">
+                                <div class="effect-hover flex">
+                                    <i class="fa-regular fa-circle-play"></i>
+                                </div>
+                            </div>
+                        </div>
                         <h5>Heavy Metal</h5>
                         <span>Subtitle</span>
                     </div>
                     <div class="col">
-                        <img src="./spotify/img/stranger.jpeg" alt="">
+                        <div class="album-hover">
+                            <div class="img-hover">
+                                <img src="./spotify/img/stranger.jpeg" alt="">
+                                <div class="effect-hover flex">
+                                    <i class="fa-regular fa-circle-play"></i>
+                                </div>
+                            </div>
+                        </div>
                         <h5>Stranger Things, Vol. 1 (a Netflix Original Series Soundtrack)</h5>
                         <span>Kyle Dixon & michael Stein</span>
                     </div>
                     <div class="col">
-                        <img src="./spotify/img/aquietplace.jpeg" alt="">
+                        <div class="album-hover">
+                            <div class="img-hover">
+                                <img src="./spotify/img/aquietplace.jpeg" alt="">
+                                <div class="effect-hover flex">
+                                    <i class="fa-regular fa-circle-play"></i>
+                                </div>
+                            </div>
+                        </div>
                         <h5>A quiet place</h5>
                         <span>Subtitle</span>
                     </div>
                     <div class="col">
-                        <img src="./spotify/img/split.jpeg" alt="">
+                        <div class="album-hover">
+                            <div class="img-hover">
+                                <img src="./spotify/img/split.jpeg" alt="">
+                                <div class="effect-hover flex">
+                                    <i class="fa-regular fa-circle-play"></i>
+                                </div>
+                            </div>
+                        </div>
                         <h5>Split</h5>
                         <span>Subtitle</span>
                     </div>
                     <div class="col">
-                        <img src="./spotify/img/cure.jpeg" alt="">
+                        <div class="album-hover">
+                            <div class="img-hover">
+                                <img src="./spotify/img/cure.jpeg" alt="">
+                                <div class="effect-hover flex">
+                                    <i class="fa-regular fa-circle-play"></i>
+                                </div>
+                            </div>
+                        </div>
                         <h5>A cure for wellness</h5>
                         <span>Subtitle</span>
                     </div>
                     <div class="col">
-                        <img src="./spotify/img/sinister.jpeg" alt="">
+                        <div class="album-hover">
+                            <div class="img-hover">
+                                <img src="./spotify/img/sinister.jpeg" alt="">
+                                <div class="effect-hover flex">
+                                    <i class="fa-regular fa-circle-play"></i>
+                                </div>
+                            </div>
+                        </div>
                         <h5>Sinister</h5>
                         <span>Subtitle</span>
                     </div>
@@ -109,11 +151,25 @@
                 <span>Più ascolti, più accurati saranno i suggerimenti</span>
                 <div class="row flex margin-top">
                     <div class="col">
-                        <img src="./spotify/img/radar.jpeg" alt="">
+                        <div class="album-hover">
+                            <div class="img-hover">
+                                <img src="./spotify/img/radar.jpeg" alt="">
+                                <div class="effect-hover flex">
+                                    <i class="fa-regular fa-circle-play"></i>
+                                </div>
+                            </div>
+                        </div>
                         <h5>Release radar</h5>
                     </div>
                     <div class="col">
-                        <img src="./spotify/img/mixdaily.jpeg" alt="">
+                        <div class="album-hover">
+                            <div class="img-hover">
+                                <img src="./spotify/img/mixdaily.jpeg" alt="">
+                                <div class="effect-hover flex">
+                                    <i class="fa-regular fa-circle-play"></i>
+                                </div>
+                            </div>
+                        </div>
                         <h5>Daily Mix 1</h5>
                     </div>
                 </div>
@@ -123,11 +179,25 @@
                 <span>Più ascolti, più accurati saranno i suggerimenti</span>
                 <div class="row flex margin-top">
                     <div class="col">
-                        <img class="radio" src="./spotify/img/youg.jpeg" alt="">
+                        <div class="album-hover radius">
+                            <div class="img-hover">
+                                <img src="./spotify/img/youg.jpeg" alt="">
+                                <div class="effect-hover flex">
+                                    <i class="fa-regular fa-circle-play"></i>
+                                </div>
+                            </div>
+                        </div>
                         <h5>Release radar</h5>
                     </div>
                     <div class="col">
-                        <img class="radio" src="./spotify/img/einaudi.jpeg" alt="">
+                        <div class="album-hover radius">
+                            <div class="img-hover">
+                                <img src="./spotify/img/einaudi.jpeg" alt="">
+                                <div class="effect-hover flex">
+                                    <i class="fa-regular fa-circle-play"></i>
+                                </div>
+                            </div>
+                        </div>
                         <h5>Daily Mix 1</h5>
                     </div>
                 </div>
@@ -138,10 +208,8 @@
     <footer>
         <div class="box flex">
             <!-- colonna sinistra -->
-            <div class="col sx flex">
-                <div class="cover-album margin-right">
-                    <img src="./spotify/img/sinister.jpeg" alt="">
-                </div>
+            <div class="col sx flex"> 
+                <img src="./spotify/img/sinister.jpeg" alt="">
                 <div class="name-album">
                     <h5>Sinister</h5>
                     <span>Brano Nome</span>
@@ -164,21 +232,39 @@
                 <div class="controls flex">
                     <h5>0:25</h5>
                     <div class="progress-bar">
-                        <div class="scrolling"></div>
+                        <div class="effect">
+                            <div class="scrolling"></div>
+                            <div class="scrollbar-hover">
+                                <div class="scrolling-green">
+                                    <div class="circle-container flex">
+                                        <i class="fa-solid fa-circle"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <h5>4:35</h5>
                 </div>
             </div>
             <!-- /colonna centrale -->
             <!-- colonna destra -->
-            <div class="col dx flex between">
-                <div class="icons">
+            <div class="col dx flex">
+                <div class="icons flex between">
                     <i class="fa-solid fa-bars"></i>
                     <i class="fa-solid fa-desktop"></i>
                     <i class="fa-solid fa-volume-high"></i>
                 </div>
                 <div class="progress-bar">
-                    <div class="scrolling"></div>
+                    <div class="effect">
+                        <div class="scrolling"></div>
+                        <div class="scrollbar-hover">
+                            <div class="scrolling-green">
+                                <div class="circle-container flex">
+                                    <i class="fa-solid fa-circle"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <!-- /colonna destra -->

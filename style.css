@@ -67,6 +67,27 @@ li{
 }
 
 /*------------
+    TIPOGRAPHY
+-------------*/
+h3{
+    font-size: 1.5rem;
+}
+.container h5{
+    font-size: 1.1rem;
+    margin: 8px 0;
+    text-align: center;
+}
+span{
+    font-size: 0.9rem;
+    color: #7c7e83;
+    display: block;
+}
+.row span{
+    text-align: center;
+    display: block;
+}
+
+/*------------
     HEADER
 -------------*/
 header{
@@ -89,6 +110,7 @@ header{
 .menu-principal li img{
     max-height: 28px;
     margin-right: 6px;
+    margin-top: 8px;
 }
 .create-playlist .btn i{
     background-color: #a3a3a3;
@@ -100,16 +122,19 @@ header{
     overflow-y: auto;
 }
 .playlist li{
-    margin: 10px 0;
+    margin: 15px 0;
 }
 .user{
     margin-top: auto;
+    overflow-y: hidden;
 }
 .user .download img{
     max-height: 15px;
 }
 .admin{
     border-top: 1px solid #fff;
+    padding-top: 10px;
+    margin-top: 4px;
 }
 .user .admin img{
     max-height: 24px;
@@ -134,17 +159,20 @@ main{
     align-items: center;
     justify-content: end;
     padding: 0 10px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
 }
 .secondary-menu{
     flex-wrap: wrap;
     justify-content: center;
     padding: 10px 0;
-    font-size: 0.6rem;
     margin-bottom: 20px;
 
 }
 .secondary-menu li{
     margin: 0 20px;
+    border-bottom: 1px solid transparent;
 }
 /*--- main-card --- */
 .container{
@@ -152,17 +180,35 @@ main{
 }
 .row{
     gap: 5px;
+    margin: 30px 0;
 }
 .row .col{
     width: calc(100% / 6);
-    text-align: center;
 }
-.container span{
-    font-size: 0.6rem;
-    color: #7c7e83;
+.album-hover{
+    position: relative;
 }
-.container .radio{
+.radius{
     border-radius: 50%;
+    overflow: hidden;
+}
+.effect-hover img{
+    display: block;
+}
+.effect-hover{
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0,0.5);
+    opacity: 0;
+    transition: 0.4s opacity;
+}
+.effect-hover i{
+    font-size: 2.5rem;
 }
 /*--- fine main-card --- */
 
@@ -184,15 +230,13 @@ footer{
 .box .center{
     width: 60%;
 }
-.box .sx .cover-album{
-    max-width: 45px;
+.box .sx img{
+    max-width: 15%;
+    margin-right: 9px;
 }
 .box .name-album span{
     font-size: 0.7rem;
     color: #717171;
-}
-.box .name-album h5{
-    font-size: 0.7rem;
 }
 .box .name-album{
     margin-right: 30px;
@@ -220,13 +264,33 @@ footer{
     width: 50%;
 }
 .scrolling{
-    height: 100%;
+    height: 3px;
     width: 30%;
     background-color: #fff;
 }
-.dx .icons i{
-    margin: 0 6px;
-    font-size: 12px;
+.effect{
+    position: relative;
+}
+.scrolling-green{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 3px;
+    width: 60%;
+    background-color: #adff2f;
+    opacity: 0;
+    transition: 0.4s opacity;
+}
+.circle-container{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.icons i{
+    margin: 0 10px;
 }
 
 
@@ -252,6 +316,12 @@ footer{
     .secondary-menu li{
         margin-top: 10px;
     }
+    .box .col{
+        width: 25%;
+    }
+    .box .center{
+        width: 50%;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -274,8 +344,14 @@ footer{
     .menu-principal img{
         margin: 3px 0;
     }
-    .user .btn, h5{
+    .user .btn, h4{
         display: none;
+    }
+    .admin{
+        border: none;
+    }
+    .icons i{
+        margin: 0 4px;
     }
 }
 
@@ -288,7 +364,7 @@ footer{
 }
 .secondary-menu li:hover{
     color: #fff;
-    border-bottom: 1px solid #adff2f;
+    border-color: #adff2f;
 }
 .playlist li:hover{
     color: #fff;
@@ -297,3 +373,13 @@ footer{
     transform: scale(1.05);
     border: 1px solid #adff2f;
 }
+.row .effect-hover:hover{
+    display: flex;
+}
+.album-hover:hover .effect-hover{
+    opacity: 1;
+}
+.progress-bar:hover .scrolling-green{
+    opacity: 1;
+}
+
